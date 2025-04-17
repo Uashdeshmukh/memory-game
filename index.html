@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1 class="text-3xl font-bold text-emerald-700 mb-4">Memory Game</h1>
+        <div class="game-info">
+            <span>Koshishein: <span id="moves">0</span></span>
+        </div>
+        <div id="memoryBoard" class="memory-board"></div>
+        <button id="restartButton" class="restart-button">Phir se Shuru Karein</button>
+    </div>
+
+    <div id="winModalOverlay" class="modal-overlay">
+        <div class="modal-box">
+            <div id="winModalMessage" class="modal-message">Badhai Ho!</div>
+            <button id="winModalButton" class="modal-button">Dobara Khelein</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
